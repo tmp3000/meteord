@@ -1,5 +1,7 @@
 set -e
 
+echo "=> Step 1"
+
 if [ -d /bundle ]; then
   cd /bundle
   tar xzf *.tar.gz
@@ -20,6 +22,8 @@ else
   exit 1
 fi
 
+echo "=> Step 2"
+
 if [[ $REBUILD_NPM_MODULES ]]; then
   echo "=> abernix/meteord:bin-build is NOT TESTED AT ALL (and maybe not necessary???)"
   echo "     Since Meteor handles rebuilding binary dependencies itself now, it's not entirely"
@@ -37,11 +41,15 @@ if [[ $REBUILD_NPM_MODULES ]]; then
   fi
 fi
 
+echo "=> Step 3"
+
 # Set a delay to wait to start meteor container
 if [[ $DELAY ]]; then
   echo "Delaying startup for $DELAY seconds"
   sleep $DELAY
 fi
+
+echo "=> Step 4"
 
 # Honour already existing PORT setup
 export PORT=${PORT:-80}
