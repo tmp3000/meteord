@@ -19,8 +19,6 @@ echo "Waiting for binary building is happening"
 sleep 80
 
 appContent=`docker logs binary_build`
-
-echo "APP_CONTENT ON BINARY BUILD: ${appContent}"
 clean
 
 if [[ $appContent != *"abernix/meteord:bin-build"* ]]; then
