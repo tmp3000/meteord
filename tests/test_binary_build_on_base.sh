@@ -16,7 +16,7 @@ docker run -d \
     abernix/meteord:base
 
 echo "Waiting for binary building is happening"
-sleep 40
+sleep 80
 
 appContent=`docker logs binary_build`
 

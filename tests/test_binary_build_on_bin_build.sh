@@ -16,7 +16,7 @@ docker run -d \
     abernix/meteord:binbuild
 
 echo "Waiting for binary building is happening"
-sleep 40
+sleep 80
 
 appContent=`curl http://localhost:9090`
 clean
