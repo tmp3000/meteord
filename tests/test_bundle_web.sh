@@ -19,8 +19,6 @@ sleep 40
 appContent=`curl http://localhost:9090`
 clean
 
-echo "APP CONTENT: ${appContent}"
-
 if [[ $appContent != *"web_app"* ]]; then
   echo "Failed: Bundle web"
   exit 1
