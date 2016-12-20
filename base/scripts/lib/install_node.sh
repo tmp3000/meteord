@@ -29,4 +29,5 @@ npm config set registry https://registry.npm.taobao.org
 npm config set disturl https://npm.taobao.org/dist
 
 npm install --global npm@3
-alias lnpm="npm3 --registry=https://registry.npm.taobao.org"
+#alias lnpm="npm3 --registry=https://registry.npm.taobao.org"
+alias cnpm="npm --registry=https://registry.npm.taobao.org --cache=$HOME/.npm/.cache/cnpm --disturl=https://npm.taobao.org/dist --userconfig=$HOME/.cnpmrc"
