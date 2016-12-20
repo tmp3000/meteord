@@ -27,5 +27,5 @@ ln -sf /opt/nodejs/bin/npm /usr/bin/npm
 
 npm config set registry https://registry.npm.taobao.org
 npm config set disturl https://npm.taobao.org/dist
-npm install --global smart-npm --registry=https://registry.npm.taobao.org/
+sudo npm install --global smart-npm --registry=https://registry.npm.taobao.org/
 npm install --global npm@3
