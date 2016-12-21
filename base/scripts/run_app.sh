@@ -1,18 +1,17 @@
 set -e
-alias cnpm="npm --registry=https://registry.npm.taobao.org --cache=/opt/nodejs/.npm/.cache/cnpm --disturl=https://npm.taobao.org/dist --userconfig=/opt/nodejs/.cnpmrc"
 
 if [ -d /bundle ]; then
   cd /bundle
   tar xzf *.tar.gz
   cd /bundle/bundle/programs/server/
-  cnpm install --unsafe-perm
+  npm install --unsafe-perm
   cd /bundle/bundle/
 elif [[ $BUNDLE_URL ]]; then
   cd /tmp
   curl -L -o bundle.tar.gz $BUNDLE_URL
   tar xzf bundle.tar.gz
   cd /tmp/bundle/programs/server/
-  cnpm install --unsafe-perm
+  npm install --unsafe-perm
   cd /tmp/bundle/
 elif [ -d /built_app ]; then
   cd /built_app
