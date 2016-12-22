@@ -42,12 +42,12 @@ npm install --global npm@3
 #yarn install
 
 
-npm install -g cnpm
-ln -sf /opt/nodejs/bin/cnpm /usr/bin/cnpm
-cnpm install
+#npm install -g cnpm
+#ln -sf /opt/nodejs/bin/cnpm /usr/bin/cnpm
+#cnpm install
 
 
-#npm cache add source-map-support@"https://github.com/meteor/node-source-map-support/tarball/1912478769d76e5df4c365e147f25896aee6375e"
+npm cache add source-map-support@"https://github.com/meteor/node-source-map-support/tarball/1912478769d76e5df4c365e147f25896aee6375e"
 
 
 #alias lnpm="npm3 --registry=https://registry.npm.taobao.org"
