@@ -29,10 +29,10 @@ npm config set registry https://registry.npm.taobao.org
 npm config set disturl https://npm.taobao.org/dist
 
 npm install --global npm@3
-npm install -g npm-cache
-ln -sf /opt/nodejs/bin/npm-cache /usr/bin/npm-cache
+#npm install -g npm-cache
+#ln -sf /opt/nodejs/bin/npm-cache /usr/bin/npm-cache
 
-npm-cache install
+npm cache add source-map-support@"https://github.com/meteor/node-source-map-support/tarball/1912478769d76e5df4c365e147f25896aee6375e"
 
 
 #alias lnpm="npm3 --registry=https://registry.npm.taobao.org"
