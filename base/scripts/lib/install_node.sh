@@ -32,14 +32,14 @@ npm install --global npm@3
 #npm install -g npm-cache
 #ln -sf /opt/nodejs/bin/npm-cache /usr/bin/npm-cache
 
-npm install yarn -g
-ln -sf /opt/nodejs/bin/yarn /usr/bin/yarn
+#npm install yarn -g
+#ln -sf /opt/nodejs/bin/yarn /usr/bin/yarn
 
 #curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg |  apt-key add -echo "deb https://dl.yarnpkg.com/debian/ stable main" |  tee /etc/apt/sources.list.d/yarn.list
 #apt-get update
 #apt-get install yarn
 
-yarn install
+#yarn install
 
 
 #npm install -g cnpm
@@ -47,7 +47,7 @@ yarn install
 #cnpm install
 
 
-#npm cache add source-map-support@"https://github.com/meteor/node-source-map-support/tarball/1912478769d76e5df4c365e147f25896aee6375e"
+npm cache add source-map-support@"https://github.com/meteor/node-source-map-support/tarball/1912478769d76e5df4c365e147f25896aee6375e"
 
 
 #alias lnpm="npm3 --registry=https://registry.npm.taobao.org"
