@@ -27,8 +27,9 @@ ln -sf /opt/nodejs/bin/npm /usr/bin/npm
 
 npm config set registry https://registry.npm.taobao.org
 npm config set disturl https://npm.taobao.org/dist
-
+npm config set unsafe-perm=true
 npm install --global npm@5
 npm install node-gyp -g
+
 #npm install -g npm-cache
 
